@@ -1,4 +1,3 @@
-
 def max_list_iter(int_list):  # must use iteration not recursion
     if int_list == None:
         raise ValueError
@@ -21,6 +20,10 @@ def reverse_rec(int_list):   # must use recursion
 
 def bin_search(target, low, high, int_list):  # must use recursion
     mid = (low + high) // 2
+    if int_list == None:
+        raise ValueError
+    elif target < int_list[low] or target > int_list[high]:
+        return None
     if int_list[mid] == target:
         return mid
     if int_list[mid] > target:
