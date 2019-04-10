@@ -12,7 +12,7 @@ def max_list_iter(int_list): # must use iteration not recursion
 def reverse_rec(int_list):    # must use recursion
     if int_list == None:      # if int_list is none then raises value error
         raise ValueError
-    if len(int_list) == 0:    # base case: if int_list is empty, return an empty list
+    if len(int_list) == 0:    # if int_list is empty, return an empty list
         return []
     return reverse_rec(int_list[1:len(int_list)]) + int_list[0:1] # recursive step: repeatedly adds lists of the numbers in reverse order 
 
