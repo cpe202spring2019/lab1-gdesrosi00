@@ -8,10 +8,10 @@ class Location:
         self.lon = lon      # longitude in degrees (-180 to 180)
 
     def __eq__(self, other):
-        return (type(other) == Location and self.name == other.name and self.lat == other.lat and self.lon == other.lon)
+        return (type(other) == Location and self.name == other.name and self.lat == other.lat and self.lon == other.lon)   #checks location, latitude and longitude of each location object and returns true if all match
 
     def __repr__(self):
-        return("Location('{0}', {1}, {2})".format(self.name, self.lat, self.lon))
+        return("Location('{0}', {1}, {2})".format(self.name, self.lat, self.lon))   #creates a string representation for each location object
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 
